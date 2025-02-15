@@ -15,7 +15,7 @@ pub struct Initialize<'info> {
 }
 
 impl<'info> Initialize<'info> {
-    pub fn initialize(&mut self, amount: u64) -> Result<()> {
+    pub fn init(&mut self, amount: u64) -> Result<()> {
         let cpi_program = self.system_program.to_account_info();
 
         let cpi_accounts = Transfer {
